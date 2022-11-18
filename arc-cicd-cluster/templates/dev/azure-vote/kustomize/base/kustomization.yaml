@@ -5,8 +5,8 @@ namespace: dev
 
 images:
   - name: clemm.azurecr.io/azvote/azure-vote-front
-    newTag: e8de27f3fc3ad6b9f9ecc9cb0eddba89a7115566
+    newTag: d6cd81d3aa09317f362878a3768dcbb8ff0415da
   - name: clemm.azurecr.io/azvote/azure-vote-back
-    newTag: e8de27f3fc3ad6b9f9ecc9cb0eddba89a7115566
+    newTag: d6cd81d3aa09317f362878a3768dcbb8ff0415da
 resources:
   - manifests.yaml
