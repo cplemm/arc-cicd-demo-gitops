@@ -27,7 +27,7 @@ spec:
         app: ohifviewer
     spec:
       containers:
-      - image: clemm.azurecr.io/ohifviewer/ohifviewer:54e0f49c41e08d9ee931552131d24a3a86f3f312
+      - image: clemm.azurecr.io/ohifviewer/ohifviewer:bc366f75fe901bb93752c61367ff0b1fd41a9863
         name: ohifviewer
         ports:
         - containerPort: 80
