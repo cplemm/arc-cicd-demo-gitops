@@ -5,6 +5,6 @@ namespace: shs-dev
 
 images:
   - name: clemm.azurecr.io/ohifviewer/ohifviewer
-    newTag: 6882c67eb4820121d31dcd34ec382050972c6df9
+    newTag: 0a7edddf82573ae3f8b36cdf9622d2ac07e5f82d
 resources:
   - manifests.yaml
