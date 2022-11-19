@@ -1,9 +1,9 @@
 kind: Namespace
 apiVersion: v1
 metadata:
-  name: shs-dev
+  name: dev
 ---
 kind: Namespace
 apiVersion: v1
 metadata:
-  name: shs-stage
+  name: stage
