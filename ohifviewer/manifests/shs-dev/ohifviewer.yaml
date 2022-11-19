@@ -1,0 +1,42 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: ohifviewer
+  namespace: shs-dev
+spec:
+  ports:
+  - port: 80
+    targetPort: 80
+  selector:
+    app: ohifviewer
+  type: ClusterIP
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: ohifviewer
+  namespace: shs-dev
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: ohifviewer
+  template:
+    metadata:
+      labels:
+        app: ohifviewer
+    spec:
+      containers:
+      - image: clemm.azurecr.io/ohifviewer/ohifviewer:2cee28d7e5837662353d817e1091d3ee9d386c8d
+        name: ohifviewer
+        ports:
+        - containerPort: 80
+        resources:
+          limits:
+            cpu: 1000m
+            memory: 2Gi
+          requests:
+            cpu: 500m
+            memory: 1Gi
+      nodeSelector:
+        kubernetes.io/os: linux

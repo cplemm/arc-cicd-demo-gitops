@@ -1,0 +1,10 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+
+namespace: shs-dev
+
+images:
+  - name: clemm.azurecr.io/ohifviewer/ohifviewer
+    newTag: 2cee28d7e5837662353d817e1091d3ee9d386c8d
+resources:
+  - manifests.yaml
