@@ -5,6 +5,6 @@ namespace: shs-stage
 
 images:
   - name: clemm.azurecr.io/ohifviewer/ohifviewer
-    newTag: 708cd9eeae6094f4c941f5e6450fbea1a8d4be04
+    newTag: a45f6d37c62d7f2cb308e27132e7d3d172a1e2fb
 resources:
   - manifests.yaml
