@@ -27,7 +27,7 @@ spec:
         app: ohifviewer
     spec:
       containers:
-      - image: clemm.azurecr.io/ohifviewer/ohifviewer:708cd9eeae6094f4c941f5e6450fbea1a8d4be04
+      - image: clemm.azurecr.io/ohifviewer/ohifviewer:9d0590243341d2dc9e1e062c449baec428f0278c
         name: ohifviewer
         ports:
         - containerPort: 80
@@ -38,5 +38,7 @@ spec:
           requests:
             cpu: 500m
             memory: 1Gi
+      imagePullSecrets:
+      - name: clemm.azurecr.io
       nodeSelector:
         kubernetes.io/os: linux
